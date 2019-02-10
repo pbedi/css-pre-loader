@@ -9,10 +9,16 @@ h1 {
   font-size: 32px;
   margin-bottom: 3px;
 }
+
+p {
+  line-height: 1.33rem;
+  color: #7E7E7E;
+}
+
 .entry-header {
   text-align: center;
   margin: 0 auto 50px auto;
-  width: 978px;
+  max-width: 978px;
   position: relative;
   z-index: 10001;
 }
@@ -125,4 +131,30 @@ h1 {
 
 #loader-wrapper .loader-section.section-right {
   right: 0;
+}
+/* Loaded Style */
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(-100%);  /* IE 9 */
+          transform: rotate(-100%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+  -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(-100%);  /* IE 9 */
+          transform: rotate(-100%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.loaded #loader {
+  opacity: 0;
+}
+
+.loaded #loader-wrapper {
+  visibility: hidden;
+}
+#content {
+  margin: 0 auto;
+  padding-bottom: 50px;
+  width: 80%;
+  max-width: 978px;
 }
